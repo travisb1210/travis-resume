@@ -41,12 +41,11 @@ mat-card-header {
 @media screen and (min-width: 400px)  {
     
     .education-content {
-        margin-top: 50%;
+        margin-top: 5rem;
     }
     
     .certification {
-        margin-top: 20%;
-        margin-bottom: 10%;
+        margin: 0 auto;
     }
      
 }
