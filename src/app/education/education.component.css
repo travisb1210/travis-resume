@@ -46,3 +46,14 @@ mat-card-header {
         margin-top: 10%;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .certification {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .education-content {
+        margin-top: 10%;
+    }
+}
