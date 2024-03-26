@@ -10,8 +10,14 @@ mat-card-header {
 }
 
 .education-content {
-    margin-top: 50px;
+    margin-top: 20%;
 }
+
+.certification {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
 
 .education, .certifications {
     text-align: center;
