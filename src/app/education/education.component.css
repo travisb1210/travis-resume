@@ -1,0 +1,31 @@
+mat-card-header {
+    background-color: lightgray;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.education-content {
+    margin-top: 50px;
+}
+
+.education, .certifications {
+    text-align: center;
+    width: 50%;
+}
+
+
+.cajuns-logo {
+    margin-top: 10px;
+    width: 125px;
+    height: 75px;
+}
+
+.aws-logo{
+    margin-top: 30px;
+    height: 75px;
+} 

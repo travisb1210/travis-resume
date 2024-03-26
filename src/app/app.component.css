@@ -1,0 +1,15 @@
+.toolbar-title {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.toolbar-image{
+    text-align: right;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.title-text {
+    font: 50px;
+}
