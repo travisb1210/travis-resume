@@ -1,4 +1,4 @@
-.about-me {
+.about-me-content {
     font-size: 25px;
     background-color: lightgray;
     padding: 4rem;
@@ -21,6 +21,5 @@
 .about-me-content p{
     margin-left: 30px;
 }
-
 
 

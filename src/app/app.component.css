@@ -1,6 +1,7 @@
-.toolbar-title {
+.toolbar-title, .bottom-bar-message {
     flex: 1 1 auto;
     text-align: center;
+    display: inline;
 }
 
 .toolbar-image{
@@ -13,3 +14,9 @@
 .title-text {
     font: 50px;
 }
+
+.git-logo {
+    margin-top: 0.5rem;
+    height: 50px;
+}
+
