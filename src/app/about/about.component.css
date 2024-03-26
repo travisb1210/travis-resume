@@ -1,8 +1,8 @@
 .about-me {
     font-size: 25px;
     background-color: lightgray;
-    padding: 50px;
-    margin: 10%;
+    padding: 4rem;
+    margin: 7rem;
     display: flex;
     flex-direction: row;
     line-height: 2rem;
