@@ -1,3 +1,6 @@
+.about-me-content-container {
+    height: 86vh;
+}
 .about-me-content {
     font-size: 25px;
     background-color: lightgray;
@@ -22,4 +25,6 @@
     margin-left: 30px;
 }
 
-
+@media screen and (min-width: 1280px) {
+    
+}
