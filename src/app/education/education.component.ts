@@ -31,14 +31,18 @@ import { MatDividerModule } from '@angular/material/divider';
       <mat-card-content class="certifications-content">
         <div class="certification">
           <img class="aws-logo" src="assets/aws_ccp_badge.png" alt="AWS Certified Cloud Practioner Badge">
-          <h2>AWS Certified Cloud Practioner</h2>
-          <h3>Valid Through December 2026</h3>
+          <div class="certification-info">
+            <h2>AWS Certified Cloud Practioner</h2>
+            <h3>Valid Through December 2026</h3>
+          </div>
         </div>
         <mat-divider></mat-divider>
         <div class="certification">
           <img class="aws-logo" src="assets/aws_saa_badge.png" alt="AWS Solutions Architect Associate Badge">
-          <h2>AWS Solutions Architect Associate</h2>
-          <h3>Valid Through January 2027</h3>
+          <div class="certification-info">
+            <h2>AWS Solutions Architect Associate</h2>
+            <h3>Valid Through January 2027</h3>
+          </div>
         </div>
       </mat-card-content>
     </mat-card>

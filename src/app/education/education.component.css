@@ -38,14 +38,21 @@ mat-card-header {
      
 }
 
-@media screen and (min-width: 400px)  {
+@media screen and (max-width: 1200px)  {
     
     .education-content {
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
     
     .certification {
-        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        margin: 2rem;
+    }
+
+    .certification-info {
+        margin-top: 2rem;
+        margin-left: 2rem;
     }
      
 }
