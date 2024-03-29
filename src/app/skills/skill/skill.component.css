@@ -1,0 +1,16 @@
+ul{
+    position: relative;/* added */
+    padding-left:0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;/* added */
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+li{
+  background-color: white;
+  border-radius: .3em;
+  width: 30%;
+  flex: 0 0 0;/* added */
+}

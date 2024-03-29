@@ -1,0 +1,13 @@
+img {
+    height: 50px;
+}
+
+img:hover {
+    height: 60px;
+}
+
+.job-header {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}

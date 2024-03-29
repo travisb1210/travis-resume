@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.jobs {
+    width: 75%;
+    margin: auto;
+}
+
+app-job {
+    margin: 2rem;
+}
