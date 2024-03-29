@@ -60,7 +60,6 @@ export class SkillsComponent {
     "JUnit Testing", 
     "Spring Framework",
     "Angular",
-    "Typescript", 
     "Mockito"
   ]
 
