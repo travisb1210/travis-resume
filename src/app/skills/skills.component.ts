@@ -1,29 +1,36 @@
 import { Component } from '@angular/core';
 import { MatTabsModule } from '@angular/material/tabs';
 import { SkillComponent } from './skill/skill.component';
+import { MatDividerModule } from '@angular/material/divider';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [MatTabsModule, SkillComponent],
+  imports: [MatTabsModule, SkillComponent, MatDividerModule],
   template: `
     <mat-tab-group>
       <mat-tab label="Technologies">
+        <mat-divider></mat-divider>
         <app-skill [skillList]="technologiesSkills"></app-skill>
       </mat-tab>
       <mat-tab label="Frameworks">
+        <mat-divider></mat-divider>
         <app-skill [skillList]="frameWorksSkills"></app-skill>
       </mat-tab>
       <mat-tab label="Concepts">
+        <mat-divider></mat-divider>
         <app-skill [skillList]="conceptsSkills"></app-skill>
       </mat-tab>
       <mat-tab label="Tools">
+        <mat-divider></mat-divider>
         <app-skill [skillList]="toolsSkills"></app-skill>
       </mat-tab>
       <mat-tab label="Soft Skills">
+        <mat-divider></mat-divider>
         <app-skill [skillList]="softSkills"></app-skill>
       </mat-tab>
       <mat-tab label="Personal Skills">
+        <mat-divider></mat-divider>
         <app-skill [skillList]="personalSkills"></app-skill>
       </mat-tab>
     </mat-tab-group>

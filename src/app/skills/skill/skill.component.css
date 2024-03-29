@@ -1,11 +1,13 @@
 ul{
     position: relative;/* added */
     padding-left:0;
+    margin-top: 10rem;
     list-style: none;
     display: flex;
     justify-content: space-around;/* added */
     flex-wrap: wrap;
     width: 100%;
+    overflow: hidden;
 }
 
 li{
