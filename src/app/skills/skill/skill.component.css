@@ -1,18 +1,17 @@
-ul{
-    position: relative;/* added */
-    padding-left:0;
-    margin-top: 10rem;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;/* added */
-    flex-wrap: wrap;
-    width: 100%;
-    overflow: hidden;
+.skill ul {
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+  height: 100%;
 }
 
-li{
-  background-color: white;
-  border-radius: .3em;
-  width: 30%;
-  flex: 0 0 0;/* added */
+ul li {
+  flex: 1 0 33%;
+  
+}
+
+.skill {
+  height: 100%;
+  margin-top: 5rem;
+  margin-left: 10rem;
 }
