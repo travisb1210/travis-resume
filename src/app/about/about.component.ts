@@ -13,10 +13,15 @@ import { Component, Input } from '@angular/core';
           </div>
           <div>
             <p>
-              Hi my name is Travis Broussard! I am a software developer who's primary experience lies in server-side development. Although
-              my primary experience involves working with Java, I also have had exposure with database related tasks involving SQL and frontend 
+              Hi my name is Travis Broussard! I am a software developer who's primary experience lies in server-side development.
+            </p>   
+            <p>
+              Although my primary experience involves working with Java, I also have had exposure with database related tasks involving SQL and frontend 
               development utilizing HTML, CSS, and JavaScript. This website was created using these three technologies along with the Angular
-              framework. Please take a look at the skills section to see the full list of technologies that I have experience with.
+              framework. 
+            </p> 
+            <p> 
+              Please take a look at the skills section to see the full list of technologies that I have experience with.
             </p>
           </div>
         </div>
