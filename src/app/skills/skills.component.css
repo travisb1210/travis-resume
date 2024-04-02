@@ -1,3 +1,7 @@
 mat-tab-group {
     overflow: hidden;
 }
+
+li {
+    overflow: hidden;
+}

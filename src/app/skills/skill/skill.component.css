@@ -3,11 +3,12 @@
   flex-wrap: wrap;
   display: flex;
   height: 100%;
+  overflow: hidden;
 }
 
 ul li {
   flex: 1 0 33%;
-  
+
 }
 
 .skill {
