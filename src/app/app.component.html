@@ -1,38 +1,44 @@
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <button mat-icon-button (click)="sidenav.toggle();">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span class="toolbar-title"><h1 class="title-text">Travis Broussard</h1></span>
-    <img class="toolbar-image" src="assets/travis.jpeg" alt="Travis head shot">
-  </mat-toolbar-row>
-</mat-toolbar>
-<mat-sidenav-container>
-  <mat-sidenav  #sidenav>
-    <mat-list>
-      <a href="/" mat-list-item>About Me</a>
-      <mat-divider></mat-divider>
-      <a href="/skills" mat-list-item>Skills</a>
-      <mat-divider></mat-divider>
-      <a href="/history" mat-list-item>Work History</a>
-      <mat-divider></mat-divider>
-      <a href="/education" mat-list-item>Education and Certifications</a>
-      <mat-divider></mat-divider>
-      <a href="/contact" mat-list-item>Contact Me</a>
-    </mat-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <div class="outlet">
-      <router-outlet></router-outlet>
-    </div>
-  </mat-sidenav-content>
-</mat-sidenav-container>
-<mat-toolbar color="primary">
-  <mat-toolbar-row >
-    <span class="bottom-bar-message">
-      <a href="https://github.com/travisb1210/travis-resume"><img class="git-logo" src="assets/git.png" alt="GIT logo"></a>
-    </span>
-  </mat-toolbar-row>
-</mat-toolbar>
-
-
+<div class="under-construction">
+  <div class="under-construction-message">
+    <img src="assets/sad-emoji.gif" alt="sadness">
+    <h1>Sorry! This website isn't ready to be viewed this type of device!</h1>
+  </div>
+</div>
+<div class="resume">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="sidenav.toggle();">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="toolbar-title"><h1 class="title-text">Travis Broussard</h1></span>
+      <img class="toolbar-image" src="assets/travis.jpeg" alt="Travis head shot">
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-sidenav-container>
+    <mat-sidenav  #sidenav>
+      <mat-list>
+        <a href="/" mat-list-item>About Me</a>
+        <mat-divider></mat-divider>
+        <a href="/skills" mat-list-item>Skills</a>
+        <mat-divider></mat-divider>
+        <a href="/history" mat-list-item>Work History</a>
+        <mat-divider></mat-divider>
+        <a href="/education" mat-list-item>Education and Certifications</a>
+        <mat-divider></mat-divider>
+        <a href="/contact" mat-list-item>Contact Me</a>
+      </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="outlet">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row >
+      <span class="bottom-bar-message">
+        <a href="https://github.com/travisb1210/travis-resume"><img class="git-logo" src="assets/git.png" alt="GIT logo"></a>
+      </span>
+    </mat-toolbar-row>
+  </mat-toolbar>  
+</div>

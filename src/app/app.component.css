@@ -23,3 +23,37 @@
 .outlet {
     height: 86vh;
 }
+
+.under-construction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    
+    .under-construction {
+        
+        text-align: center;
+        display: block;
+        height: 100%;
+        width: 100%;
+
+        .under-construction-message {
+            height: 100%;
+        }
+
+        img {
+            margin-top: 10rem;
+            height: 150px;
+            width: 150px;
+        }
+
+    
+    }
+
+    .resume {
+        display: none;
+    }
+}
