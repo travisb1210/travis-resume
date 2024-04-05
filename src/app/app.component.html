@@ -6,13 +6,13 @@
   </div>
 </div>
 <div class="resume">
-  <mat-toolbar color="primary">
+  <mat-toolbar color={{toolbarColor}}>
     <mat-toolbar-row>
       <button mat-icon-button (click)="sidenav.toggle();">
         <mat-icon>menu</mat-icon>
       </button>
       <span class="toolbar-title"><h1 class="title-text">Travis Broussard</h1></span>
-      <img class="toolbar-image" src="assets/travis.jpeg" alt="Travis head shot">
+      <img class="toolbar-image" src="assets/travis.jpeg" alt="Travis head shot" (click)="changeMenuColor()">
     </mat-toolbar-row>
   </mat-toolbar>
   <mat-sidenav-container>
@@ -35,7 +35,7 @@
       </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
-  <mat-toolbar color="primary">
+  <mat-toolbar color={{toolbarColor}}>
     <mat-toolbar-row >
       <span class="bottom-bar-message">
         <a href="https://github.com/travisb1210/travis-resume"><img class="git-logo" src="assets/git.png" alt="GIT logo"></a>

@@ -26,4 +26,18 @@ import { MatDividerModule } from '@angular/material/divider';
 })
 export class AppComponent {
   
+  toolbarColor: string = "primary"
+
+  changeMenuColor() {
+    switch(this.toolbarColor) {
+      case "primary":
+        this.toolbarColor = "accent";
+        break
+      case "accent":
+        this.toolbarColor = "primary";
+        break;
+      default:
+        this.toolbarColor = "warn"  
+    }
+  }
 }
