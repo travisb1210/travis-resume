@@ -2,17 +2,18 @@
   flex-direction: column;
   flex-wrap: wrap;
   display: flex;
+  margin-top: 4rem;
   height: 100%;
   overflow: hidden;
 }
 
 ul li {
   flex: 1 0 33%;
-
+  list-style: none;
 }
 
 .skill {
-  height: 100%;
-  margin-top: 5rem;
-  margin-left: 10rem;
+  width: 85%;
+  height: 77vh;
+  margin: auto;
 }
