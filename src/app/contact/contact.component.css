@@ -4,6 +4,7 @@
 }
 
 ul {
+    border: solid black;
     list-style-type: none;
     padding: 5px;
     margin-top: 10%;

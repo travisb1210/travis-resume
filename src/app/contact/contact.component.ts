@@ -18,7 +18,7 @@ import { ContactItem } from '../contact-item';
         <a href={{gmail.href}}><img class={{gmail.imgClass}} src={{gmail.imgSrc}} alt={{gmail.imgAlt}}></a>
       </li>
       <li>
-        <a href={{gmail.href}}><img class={{gmail.imgClass}} src={{gmail.imgSrc}} alt={{gmail.imgAlt}}></a>
+        <a href={{mobile.href}}><img class={{mobile.imgClass}} src={{mobile.imgSrc}} alt={{mobile.imgAlt}}></a>
       </li>
     </ul>
   </div>
