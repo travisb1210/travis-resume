@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDividerModule } from '@angular/material/divider';
+import { ContactItem } from '../contact-item';
 
 @Component({
   selector: 'app-contact',
@@ -11,13 +12,13 @@ import { MatDividerModule } from '@angular/material/divider';
     <mat-divider></mat-divider>
     <ul>
       <li>
-        <a href="https://www.linkedin.com/in/travis-broussard-273b9519a/"><img class="contact-link" src="assets/linkedin.png" alt="LinkedIn Icon"></a>
+        <a href={{linkedIn.href}}><img class={{linkedIn.imgClass}} src={{linkedIn.imgSrc}} alt={{linkedIn.imgAlt}}></a>
       </li>
       <li>
-        <a href="mailto:travisb1210@gmail.com"><img class="contact-link" src="assets/gmail.ico" alt="Gmail Icon"></a>
+        <a href={{gmail.href}}><img class={{gmail.imgClass}} src={{gmail.imgSrc}} alt={{gmail.imgAlt}}></a>
       </li>
       <li>
-        <a href="tel:(337)275-0622"><img class="contact-link" src="assets/phone.png" alt="Phone Icon"></a>
+        <a href={{gmail.href}}><img class={{gmail.imgClass}} src={{gmail.imgSrc}} alt={{gmail.imgAlt}}></a>
       </li>
     </ul>
   </div>
@@ -26,4 +27,24 @@ import { MatDividerModule } from '@angular/material/divider';
 })
 export class ContactComponent {
 
+  linkedIn: ContactItem = {
+    href: "https://www.linkedin.com/in/travis-broussard-273b9519a/",
+    imgClass: "contact-link",
+    imgSrc: "assets/linkedin.png",
+    imgAlt: "LinkedIn Icon"
+  }
+
+  gmail: ContactItem = {
+    href: "mailto:travisb1210@gmail.com",
+    imgClass: "contact-link",
+    imgSrc: "assets/gmail.ico",
+    imgAlt: "Gmail Icon"
+  }
+
+  mobile: ContactItem = {
+    href: "tel:(337)275-0622",
+    imgClass: "contact-link",
+    imgSrc: "assets/phone.png",
+    imgAlt: "Phone Icon"
+  }
 }
