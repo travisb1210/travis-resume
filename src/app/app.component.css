@@ -10,10 +10,6 @@
     border-radius: 50%;
 }
 
-.toolbar-image:hover{
-    cursor: pointer;
-}
-
 .title-text {
     font: 50px;
 }
@@ -32,6 +28,15 @@
     align-items: center;
     justify-content: center;
     display: none;
+}
+
+.list-item:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.toolbar-image:hover{
+    cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
