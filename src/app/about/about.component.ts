@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { QuoteComponent } from './quote/quote.component';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [],
+  imports: [QuoteComponent],
   template: `
   <div class="about-me">
     <div class="about-me-content-container">
@@ -24,6 +25,9 @@ import { Component, Input } from '@angular/core';
               Please take a look at the skills section to see the full list of technologies that I have experience with.
             </p>
           </div>
+        </div>
+        <div class="quote">
+          <app-quote></app-quote>
         </div>
     </div>
   </div>

@@ -18,7 +18,11 @@
     line-height: 2rem;
 }
 
-
+.quote {
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+}
 
 .about-me-content img{
     height: 200px;

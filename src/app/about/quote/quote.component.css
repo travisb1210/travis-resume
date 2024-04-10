@@ -1,0 +1,13 @@
+.quote {
+    font-size: 25px;
+    line-height: 2rem;
+    text-align: center;
+}
+
+p {
+    margin: 3rem;
+}
+
+.words {
+    font-style: italic;
+}
