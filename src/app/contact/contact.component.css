@@ -37,3 +37,14 @@ img {
         height: 120px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        margin-bottom: 2rem;
+    }
+}
