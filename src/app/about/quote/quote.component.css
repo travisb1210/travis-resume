@@ -11,3 +11,14 @@ p {
 .words {
     font-style: italic;
 }
+
+@media screen and (max-width: 600px) {
+    
+    .quote {
+        font-size: 20px;
+    }
+
+    p {
+        margin: 1rem;
+    }
+}

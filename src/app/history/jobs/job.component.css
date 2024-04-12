@@ -11,3 +11,26 @@ img:hover {
     margin: auto;
     text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+    
+    .job-header {
+        width: 80%;
+    }
+
+    ul {
+        width: 90%;
+    }
+
+    li {
+        margin: 1rem;
+        margin-left: 0;
+    }
+
+    .summary {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 15px;
+    }
+}

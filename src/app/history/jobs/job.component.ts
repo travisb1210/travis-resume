@@ -12,7 +12,7 @@ import { Component, Input } from '@angular/core';
         <h2>{{jobTitle}}</h2>
         <h3>{{datesEmployed}}</h3>
       </div>
-      <p><em>{{summary}}</em></p>
+      <p class="summary"><em>{{summary}}</em></p>
       <ul>
         @for (contribution of notableContributions; track $index) {
           <li>{{contribution}}</li>

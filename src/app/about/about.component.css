@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 85%;
     margin: auto;
-    padding: 7rem;
+    margin-top: 2rem;
     overflow: hidden;
 }
 
@@ -11,10 +12,10 @@
     font-size: 25px;
     background-color: lightgray;
     display: flex;
+    height: 88vh;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    padding: 5rem;
     line-height: 2rem;
 }
 
@@ -52,4 +53,19 @@ p{
         text-align: center;
     }
 
+}
+
+@media screen and (max-width: 600px) {
+    
+    .about-me {
+        overflow: scroll;
+    }
+
+    .about-me-content {
+        background-color: white;
+    }
+
+    .quote {
+        width: 90%
+    }
 }
