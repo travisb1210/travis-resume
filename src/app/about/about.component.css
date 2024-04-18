@@ -12,11 +12,12 @@
     font-size: 25px;
     background-color: lightgray;
     display: flex;
-    height: 88vh;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     line-height: 2rem;
+    padding: 1rem;
+    height: 44vh;
 }
 
 .quote {
@@ -36,9 +37,14 @@ p{
 }
 
 @media screen and (max-width: 1300px) {
+    
     .about-me-content {
         flex-direction: column;
         padding: 1rem;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
+        line-height: 2rem;
     }
 
     img {
