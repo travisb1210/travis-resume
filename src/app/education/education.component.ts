@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
+import { EducationItemComponent } from './education-item/education-item.component';
+import { CertificationItemComponent } from './certification-item/certification-item.component';
 
 
 @Component({
   selector: 'app-education',
   standalone: true,
-  imports: [MatCardModule, MatDividerModule],
+  imports: [MatCardModule, MatDividerModule, EducationItemComponent, CertificationItemComponent],
   template: `
   <div class="cards">
     <mat-card class="education">
@@ -14,13 +16,14 @@ import { MatDividerModule } from '@angular/material/divider';
         <mat-card-title><h1>Education</h1></mat-card-title>
       </mat-card-header>
       <mat-card-content class="education-content">
-        <div>
-          <img class="cajuns-logo" src="assets/ragin_cajuns.png" alt="Ragin Cajuns Logo">
-          <h2 class="education-header-content">University of Louisiana at Lafayette</h2>
-          <h3>Bachelor of Science - Informatics</h3>
-          <h3>August 2017 - December 2021</h3>
-          <h4>3.0 GPA</h4>
-        </div>
+        <app-education-item
+          [logoSource]="'assets/ragin_cajuns.png'"
+          [altTag]="'Ragin Cajuns Logo'"
+          [institution]="'University of Louisiana at Lafayette'"
+          [degree]="'Bachelor of Science - Informatics'"
+          [dateStudied]="'August 2017 - December 2021'"
+          [gpa]="'3.0 GPA'">
+        </app-education-item>
       </mat-card-content>
     </mat-card>
     <mat-divider></mat-divider>
@@ -29,20 +32,22 @@ import { MatDividerModule } from '@angular/material/divider';
           <mat-card-title><h1>Certifications</h1></mat-card-title>
       </mat-card-header>
       <mat-card-content class="certifications-content">
-        <div class="certification">
-          <img class="aws-logo" src="assets/aws_ccp_badge.png" alt="AWS Certified Cloud Practioner Badge">
-          <div class="certification-info">
-            <h2>AWS Certified Cloud Practioner</h2>
-            <h3>Valid Through December 2026</h3>
-          </div>
+        <div class="cert">
+          <app-certification-item class='cert-item'
+            [logoSource]="'assets/aws_ccp_badge.png'"
+            [altTag]="'AWS Certified Cloud Practioner Badge'"
+            [certName]="'AWS Certified Cloud Practioner'"
+            [validThrough]="'Valid Through December 2026'">
+          </app-certification-item>
         </div>
         <mat-divider></mat-divider>
-        <div class="certification">
-          <img class="aws-logo" src="assets/aws_saa_badge.png" alt="AWS Solutions Architect Associate Badge">
-          <div class="certification-info">
-            <h2>AWS Solutions Architect Associate</h2>
-            <h3>Valid Through January 2027</h3>
-          </div>
+        <div class="cert">
+          <app-certification-item class="cert-item"
+            [logoSource]="'assets/aws_saa_badge.png'"
+            [altTag]="'AWS Solutions Architect Associate Badge'"
+            [certName]="'AWS Solutions Architect Associate'"
+            [validThrough]="'Valid Through January 2027'">   
+          </app-certification-item>
         </div>
       </mat-card-content>
     </mat-card>

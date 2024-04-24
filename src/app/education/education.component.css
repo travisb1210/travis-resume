@@ -14,45 +14,31 @@ mat-card-header {
     width: 50%;
 }
 
-.cajuns-logo {
-    margin-top: 10px;
-    width: 125px;
-    height: 75px;
+.education-content, .certification-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 44vh;
+    margin: auto;
 }
 
-.aws-logo{
-    margin-top: 30px;
-    height: 75px;
-} 
-
-@media screen and (min-width: 1700px)  {
-    
-    .education-content {
-        margin-top: 20%;
-    }
-    
-    .certification {
-        margin-top: 5%;
-        margin-bottom: 10%;
-    }
-     
+.cert {
+    margin-top: 4rem;
+    margin-bottom: 5rem
 }
 
-@media screen and (max-width: 1300px)  {
-    
-    .education-content {
-        margin-top: 3rem;
-    }
-    
-    .certification {
-        display: flex;
-        flex-direction: row;
-        margin: 2rem;
+@media screen and (max-width: 1300px) {
+    .education-content, .certification-content {
+        max-width: 88vh;
     }
 
-    .certification-info {
-        margin-top: 2rem;
-        margin-left: 2rem;
+    .cards {
+        height: auto;
     }
-     
+
+    .cert {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
