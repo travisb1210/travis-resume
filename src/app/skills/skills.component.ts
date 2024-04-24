@@ -60,6 +60,7 @@ export class SkillsComponent {
     "JUnit Testing", 
     "Spring Framework",
     "Angular",
+    "Angular Material Library",
     "Mockito"
   ]
 

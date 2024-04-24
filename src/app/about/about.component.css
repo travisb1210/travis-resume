@@ -21,6 +21,7 @@
 }
 
 .quote {
+    display: flex;
     width: 70%;
     margin: auto;
     margin-top: 2rem;
@@ -32,31 +33,46 @@
     border-radius: 50%;
 }
 
-p{
-    margin-left: 30px;
-}
+
 
 @media screen and (max-width: 1300px) {
+
+    .about-me {
+        margin-top: 0;
+    }
+
+    .about-me-content-container {
+        display: flex;
+        flex-direction: row;
+    }
     
     .about-me-content {
+        font-size: 18px;
+        margin: 0;
         flex-direction: column;
         padding: 1rem;
         align-items: center;
         justify-content: center;
         height: 88vh;
+        width: 80%;
         line-height: 2rem;
     }
 
-    img {
-        margin-bottom: 25px;
-        margin-top: 10px;
-        height: 100px;
-        width: 100px;
+    .about-me-content img {
+        height: 125px;
+        width: 125px;
     }
 
     p {
-        font-size:20px;
         text-align: center;
+    }
+
+    .quote {
+        height: 88vh;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 }
