@@ -10,6 +10,7 @@ p {
 
 .words {
     font-style: italic;
+    text-shadow: 2px 2px 5px;
 }
 
 @media screen and (max-width: 600px) {
