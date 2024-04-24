@@ -6,7 +6,7 @@
   </div>
 </div>
 <div class="resume">
-  <mat-toolbar color={{toolbarColor}}>
+  <mat-toolbar color={{stateService.getColor()}}>
     <mat-toolbar-row>
       <button mat-icon-button (click)="sidenav.toggle();">
         <mat-icon>menu</mat-icon>
@@ -35,7 +35,7 @@
       </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
-  <mat-toolbar color={{toolbarColor}}>
+  <mat-toolbar color={{stateService.getColor()}}>
     <mat-toolbar-row >
       <span class="bottom-bar-message">
         <a href="https://github.com/travisb1210/travis-resume"><img class="git-logo" src="assets/git.png" alt="GIT logo"></a>

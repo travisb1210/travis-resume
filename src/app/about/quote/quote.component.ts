@@ -1,6 +1,6 @@
 import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { Quote } from '../../quote';
+import { Quote } from '../../shared/quote';
 import { Observable } from 'rxjs';
 
 @Component({

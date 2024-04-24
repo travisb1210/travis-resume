@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Inject, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -6,6 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list'
 import { MatDividerModule } from '@angular/material/divider';
+import { StateService } from './shared/state.service';
 
 
 
@@ -19,25 +20,25 @@ import { MatDividerModule } from '@angular/material/divider';
     MatIconModule,
     MatButtonModule,
     MatListModule,
-    MatDividerModule
+    MatDividerModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   
-  toolbarColor: string = "primary"
+  stateService = inject(StateService)
 
   changeMenuColor() {
-    switch(this.toolbarColor) {
+    switch(this.stateService.getColor()) {
       case "primary":
-        this.toolbarColor = "accent";
+        this.stateService.setColor("accent");
         break
       case "accent":
-        this.toolbarColor = "primary";
+        this.stateService.setColor("primary");
         break;
       default:
-        this.toolbarColor = "warn"  
+        this.stateService.setColor("warn")  
     }
   }
 }

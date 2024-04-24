@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDividerModule } from '@angular/material/divider';
-import { ContactItem } from '../contact-item';
+import { ContactItem } from '../shared/contact-item';
 
 @Component({
   selector: 'app-contact',
