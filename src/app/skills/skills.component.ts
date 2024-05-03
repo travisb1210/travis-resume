@@ -41,6 +41,7 @@ export class SkillsComponent {
 
   technologiesSkills: string[] = [
     "Java 8/17", 
+    "Python",
     "Gradle", 
     "Oracle 19C",
     "Database", 
